@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double m, n, z1, z2;
+
+    printf("Enter the value of m: ");
+    scanf("%lf", &m);
+    printf("Enter the value of n: ");
+    scanf("%lf", &n);
+
+    z1 = ((m - 1) * sqrt(m) - (n - 1) * sqrt(n)) / (sqrt(n * m * m * m) + n * m + m * m - m);
+    z2 = (sqrt(m) - sqrt(n)) / m;
+
+    printf("z1 = %lf\n", z1);
+    printf("z2 = %lf\n", z2);
+}
